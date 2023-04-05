@@ -48,7 +48,7 @@ var Category;
     Category[Category["Children"] = 5] = "Children";
 })(Category || (Category = {}));
 function GetBookTitlesWithCategory(CategoryFilter) {
-    console.log(" Getting books in category: ", CategoryFilter);
+    console.log(" Getting books in category: ", Category[CategoryFilter]);
     var books = GetAllBooks();
     var filteredTitles = [];
     for (var _i = 0, books_2 = books; _i < books_2.length; _i++) {

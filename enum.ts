@@ -52,7 +52,7 @@ enum Category {
 }
 
 function GetBookTitlesWithCategory(CategoryFilter: Category): Array<string> {
-  console.log(" Getting books in category: ", CategoryFilter);
+  console.log(" Getting books in category: ", Category[CategoryFilter]);
   const books = GetAllBooks();
   const filteredTitles: string[] = [];
 
